@@ -87,7 +87,7 @@ function DashboardProduct() {
               key={direction}
               id={`dropdown-button-drop-${direction}`}
               drop={direction}
-              variant="secondary"
+              variant="warning"
               title={`ตัวเลือกแสดง`}
             >
               <Dropdown.Item onClick={toggleSortByStock}>
@@ -96,7 +96,7 @@ function DashboardProduct() {
             </DropdownButton>
           ),
         )}
-      <h3>จำนวนสินค้าทั้งหมด: <Badge bg="secondary">{totalProducts}</Badge></h3>
+      <h3>จำนวนสินค้าทั้งหมด: <Badge bg="warning">{totalProducts}</Badge></h3>
       <div className="d-flex justify-content-end">
         <button className="btn btn-primary" size="sm" onClick={toggleAddModal}><CirclePlus size={18} /> Add Product</button>
       </div>
