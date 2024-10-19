@@ -20,7 +20,7 @@ const App = () => {
   return (
     <div>
       <Router>
-        <Navbar className=' p-2' bg="dark" data-bs-theme="dark">
+        <Navbar className=' p-2' bg="success" data-bs-theme="dark">
           <Container className='d-flex justify-content-between'>
             <Navbar.Brand href="/">React CRUD</Navbar.Brand>
             <Nav >
@@ -35,7 +35,7 @@ const App = () => {
                     key={direction}
                     id={`dropdown-button-drop-${direction}`}
                     drop={direction}
-                    variant="secondary"
+                    variant="warning"
                     title={`ระบบหลังบ้าน`}
                   >
                     <Dropdown.Item as={NavLink} to="/DashboardProduct" style={{ textDecoration: "none", color: "inherit" }}>
